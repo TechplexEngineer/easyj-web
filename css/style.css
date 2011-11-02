@@ -1,0 +1,191 @@
+/* 
+    Document   : style.css
+    Created on : Nov 2, 2011, 4:23:16 PM
+    Author     : Techplex.Engineer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body { 
+    background-image: url(../images/body-bg.png);
+    color: #D7D7D7;
+    margin: 0;
+    padding: 0;
+}
+article, nav, section, header, footer, aside {
+display: block;
+}
+
+a, a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+p.desc{
+    padding-left: 30%;
+    line-height: 1.5;
+    font-family: arial, sans-serif;
+    font-size: .95em;
+}
+
+article{
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0 5px;
+}
+
+
+nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+article nav{
+    margin-top:10px;
+}
+nav a{
+    margin: 10px 0 0 25px;
+    text-align: center;
+    text-decoration: none;
+    
+    color: white;
+    padding: 5px 30px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 35px;
+    font-family: 'Tulpen One', sans-serif;
+    
+    border:1px solid #090;
+    
+    background:#090;
+    background:	-webkit-gradient(linear,left top,left bottom,from(#0c0),to(#050));
+    background: -moz-linear-gradient(center top,#0c0 0,#050 100%);
+    
+    
+    box-shadow: 2px 2px 2px black;
+    
+    -webkit-transition:opacity .5s ease-out 0s;
+    -moz-transition:opacity .5s ease-out 0s;
+    -o-transition:opacity .5s ease-out 0s;
+    transition:opacity .5s ease-out 0s;
+    
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    
+/*    text-shadow:1px 1px 2px rgba(0,0,0,0.1),-1px -1px 2px rgba(255,255,255,0.1);*/
+    opacity: .7;
+}
+nav a:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+hr{
+    height: 2px;
+    border: none;
+    background: black;
+    outline: none;
+}
+
+div.main > section:nth-child(1){
+    width: 28%;
+    float: left;
+}
+div.main > section:nth-child(2){
+    width: 28%;
+    float: right;
+    overflow: hidden;
+}
+div.main > section:nth-child(3){
+    width: 36%;
+    margin: 0 auto;
+    position: relative;
+}
+div.main > section:nth-child(3) > img{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.main h3{
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin: 5px;
+    font-family: 'Tulpen One', sans-serif;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25);
+    
+}
+
+div.main li{
+    padding: 5px 0 5px 28px;
+    background: url(../images/check.png) 0 2px no-repeat;
+    overflow: hidden;
+    font-weight: bold;
+    color: #777;
+}
+ul{
+    padding: 0 0 0 5px;
+}
+li > a{
+    color: #BBB;
+    text-decoration: none;
+}
+li > a:hover{
+    background: url(../images/arrow-right.png) right 2px no-repeat;
+    color: white;
+    padding-right: 15px;
+    line-height: 1.35714;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+body > nav{
+    margin-top:10px;
+    color: black;
+    height: 111px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background: url(../images/nav-bg-gradient.png) center bottom repeat-x #AAA;
+}
+
+/*Page Header*/
+body > nav > h1{
+    z-index: 15;
+    margin: 0;
+    padding-top: 5px;
+    color:#31fd00;
+    
+    font-size: 6em;
+    letter-spacing: 5px;
+    
+    font-family: 'Tulpen One', sans-serif;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+body > nav:before{
+    height: 13px;
+    width: 100%;
+    position: absolute;
+    top: 111px;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: 5;
+    background: url(../images/showcase-article-top.png) 0 0 repeat-x;
+}
