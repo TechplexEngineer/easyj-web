@@ -21,7 +21,7 @@ article, nav, section, header, footer, aside {
 display: block;
 }
 
-a, a:link, a:visited{
+p > a:link, p > a:visited{
     color: white;
     text-decoration: none;
 }
@@ -33,6 +33,7 @@ a:hover{
 
 p.desc{
     padding-left: 30%;
+    padding-right: 18%;
     line-height: 1.5;
     font-family: arial, sans-serif;
     font-size: .95em;
@@ -104,6 +105,7 @@ hr{
 div.main > section:nth-child(1){
     width: 28%;
     float: left;
+    margin-left: 30px;
 }
 div.main > section:nth-child(2){
     width: 28%;
@@ -136,21 +138,23 @@ div.main li{
     background: url(../images/check.png) 0 2px no-repeat;
     overflow: hidden;
     font-weight: bold;
-    color: #777;
+    color: #bbb;
 }
 ul{
     padding: 0 0 0 5px;
 }
-li > a{
+
+ul > li > a{
     color: #BBB;
     text-decoration: none;
-}
-li > a:hover{
-    background: url(../images/arrow-right.png) right 2px no-repeat;
-    color: white;
     padding-right: 15px;
     line-height: 1.35714;
     font-family: Helvetica,Arial,sans-serif;
+}
+ul > li > a:hover{
+    color: white;
+    background: url(../images/arrow-right.png) right 2px no-repeat;
+    text-decoration: none;
 }
 
 body > nav{
@@ -188,4 +192,11 @@ body > nav:before{
     display: block;
     z-index: 5;
     background: url(../images/showcase-article-top.png) 0 0 repeat-x;
+}
+
+.download{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: -12px;
 }
